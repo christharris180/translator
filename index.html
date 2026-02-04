@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Traductor App</title>
-    <!-- THIS IS THE CORRECT LINE -->
-    <script src="https://code.jquery.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator App</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #f4f4f9; }
+        #app-container { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    </style>
 </head>
 <body>
     <div id="app-container">
+        <!-- This line will disappear when your app loads correctly -->
         <h1>Translator Live</h1>
         <p>If you see this, the HTML is working. Now loading translator.js...</p>
     </div>
+
+    <!-- Move the script tags here, to the bottom of the body -->
+    <script src="https://code.jquery.com"></script>
     <script src="translator.js"></script>
+
 </body>
 </html>
