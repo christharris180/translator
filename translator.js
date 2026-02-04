@@ -1,3 +1,9 @@
+$(function() {
+
+// PASTE ALL YOUR EXISTING ANTIGRAVITY TRANSLATOR CODE HERE
+
+});
+
 class TranslatorElement extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<!DOCTYPE html>
@@ -717,3 +723,9 @@ class TranslatorElement extends HTMLElement {
   }
 }
 customElements.define('translator-app', TranslatorElement);
+$(function() {
+
+// PASTE ALL YOUR EXISTING ANTIGRAVITY TRANSLATOR CODE HERE
+
+});
+
