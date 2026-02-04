@@ -538,7 +538,7 @@ class TranslatorElement extends HTMLElement {
                 if (currentOutput !== translations.es.resultPlaceholder && currentOutput !== "") {
                     inputText.value = currentOutput;
                     outputText.textContent = currentInput;
-                    charCount.textContent = `${inputText.value.length} caracteres`;
+                    charCount.textContent = inputText.value.length + ' caracteres';
                 }
             });
 
@@ -644,7 +644,7 @@ class TranslatorElement extends HTMLElement {
                 recognition.onresult = (event) => {
                     const transcript = event.results[0][0].transcript;
                     inputText.value = transcript;
-                    charCount.textContent = `${inputText.value.length} caracteres`;
+                    charCount.textContent = inputText.value.length + ' caracteres';
                 };
 
                 recognition.onerror = (event) => {
@@ -728,5 +728,6 @@ $(function() {
 // PASTE ALL YOUR EXISTING ANTIGRAVITY TRANSLATOR CODE HERE
 
 });
+
 
 
