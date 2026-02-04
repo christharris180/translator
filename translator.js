@@ -694,7 +694,7 @@ class TranslatorElement extends HTMLElement {
 
             // Real Translation via MyMemory API
             async function translateText(text, fromLang, toLang) {
-                const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${fromLang}|${toLang}`;
+                const url = 'https://api.mymemory.translated.net' + encodeURIComponent(text) + '&langpair=' + fromLang + '|' + toLang;
                 try {
                     const response = await fetch(url);
                     const data = await response.json();
@@ -728,6 +728,7 @@ $(function() {
 // PASTE ALL YOUR EXISTING ANTIGRAVITY TRANSLATOR CODE HERE
 
 });
+
 
 
 
