@@ -513,7 +513,7 @@ class TranslatorElement extends HTMLElement {
 
             // Update character count
             inputText.addEventListener('input', () => {
-                charCount.textContent = `${inputText.value.length} caracteres`;
+                charCount.textContent = inputText.value.length + ' caracteres';
             });
 
             // Swap Languages
@@ -728,4 +728,5 @@ $(function() {
 // PASTE ALL YOUR EXISTING ANTIGRAVITY TRANSLATOR CODE HERE
 
 });
+
 
